@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars for local development.
+#
+# The devcontainer starts DynamoDB Local on port 8000. Setting dynamodb_endpoint
+# redirects all DynamoDB calls to the local instance; no AWS credentials
+# are needed for the table itself (the AWS CLI profile can be any dummy
+# value when running locally).
+#
+# Each cell is a separate Terraform workspace. Select or create one before
+# applying:
+#   terraform workspace select dev || terraform workspace new dev
+
+aws_region        = "us-east-1"
+dynamodb_endpoint = "http://localhost:8000"

@@ -1,0 +1,12 @@
+frontend/node_modules/
+frontend/dist/
+
+backend/.publish/
+backend/bin/
+backend/obj/
+backend/backend.zip
+
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
